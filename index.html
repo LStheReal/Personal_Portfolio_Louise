@@ -6,7 +6,7 @@
         <meta name="author" content="Louise">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Personal Protfolio Louise</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style.css">
         <script src="js/script.js"></script>
     </head>
     <body>
@@ -27,8 +27,8 @@
                 <p>Hello!</p>
                 <h1>I'm Louise Schülé</h1>
                 <p>Fullstack Web Developer</p>
-                <button href="contact">HIRE ME</button> 
-                <button href="projects">MY WORK</button>
+                <button><a href="#contact">HIRE ME</a></button> 
+                <button><a href="#projects">MY WORK</a></button>
                 <img src="img/portrait_school.JPG" alt="Portrait of Louise Schülé" width="300" >  
             </section>
             <section id="about">
@@ -61,9 +61,72 @@
                 </table>
                 <button><a href="img/cv.pdf">DOWNLOAD CV</a></button>
             </section>
+            <section id="skills">
+                <h2>My Skills</h2>
+                <p>I tried showing and grading my skills as good a possible. Hopefully this will help you get a better picture of me and my skillset.</p>
+                
+                <div id="skill-container">
+                    <div class="skill">
+                        <div class="skill-name">HTML</div>
+                        <div class="skill-bar" data-percent="90">
+                            <div class="skill-fill"></div>
+                            <div class="skill-percentage">90%</div>
+                        </div>
+                    </div>
+            
+                    <div class="skill">
+                        <div class="skill-name">CSS</div>
+                        <div class="skill-bar" data-percent="80">
+                            <div class="skill-fill"></div>
+                            <div class="skill-percentage">80%</div>
+                        </div>
+                    </div>
+            
+                    <div class="skill">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-bar" data-percent="40">
+                            <div class="skill-fill"></div>
+                            <div class="skill-percentage">40%</div>
+                        </div>
+                    </div>
+            
+                    <div class="skill">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar" data-percent="20">
+                            <div class="skill-fill"></div>
+                            <div class="skill-percentage">20%</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <h2>My Projects</h2>
+                <p>Here are some of my projects. I hope you like them!</p>
+                <div class="project-container">
+                    <div class="project">
+                        <a href="https://lsthereal.github.io/" target="_blank">
+                        <img src="img/az_website" alt="Picture of AZ Website" width="300">
+                        <h3>AZ Website</h3>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>Feel free to contact me if you have any questions or want to work with me!</p>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">SEND</button> 
+                </form>
+            </section>
         </main>
         <footer>
-
+            <p>&copy; 2025 Louise Schülé</p>
         </footer>
     </body>
 <html>
